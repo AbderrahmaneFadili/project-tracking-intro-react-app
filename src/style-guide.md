@@ -35,3 +35,14 @@ The designs were created to the following widths:
 
 - Family: [Barlow](https://fonts.google.com/specimen/Barlow)
 - Weights: 400
+
+### website content
+
+New
+Monograph Dashboard
+
+Powerful insights into your team
+Project planning and time tracking for agile teams
+
+Schedule a demo
+to see a live preview
