@@ -20,13 +20,6 @@ const Header = () => {
     setShowMenu(!showMenu);
   };
 
-  const showMenuAnimationConfig = {
-    x: 0,
-    y: 0,
-    animationDuration: 400,
-    opacity: showMenu ? 1 : 0,
-  };
-
   return (
     <MainHeader>
       <HeaderContainer>
@@ -45,7 +38,7 @@ const Header = () => {
           )}
         </MenuToggle>
         {/* Nav */}
-        <Nav animate={showMenuAnimationConfig}>
+        <Nav showMenu={showMenu}>
           <NavMenu>
             <NavMenuItem>
               <NavMenuLink to="/product">product</NavMenuLink>

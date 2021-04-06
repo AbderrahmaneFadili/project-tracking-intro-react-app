@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../../components/Button/Button";
+import { motion } from "framer-motion";
 
 export const HomeWrapper = styled.main`
   width: 100%;
@@ -9,7 +9,7 @@ export const HomeWrapper = styled.main`
   overflow-x: hidden;
 `;
 
-export const HomePattern = styled.div`
+export const HomePattern = styled(motion.div)`
   position: absolute;
   width: 50%;
   height: 75vh;
@@ -21,19 +21,35 @@ export const HomePattern = styled.div`
 `;
 
 export const HomeIntro = styled.section`
-  padding: 7rem 0;
+  padding: 7rem 0 0 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100vh;
 `;
 
 export const HomeIntroIllustration = styled.img`
   width: 160%;
+  margin-right: -65%;
+
+  @media screen and (min-width: 999px) {
+    width: 90%;
+    margin-right: -35%;
+    position: absolute;
+  }
 `;
 
 export const HomeIntroContent = styled.div`
-  padding: 2rem 0;
+  padding: 6rem 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
+
+  @media screen and (min-width: 999px) {
+    width: 50%;
+    margin-right: auto;
+  }
 `;
 
 export const IntroSubHeading = styled.div`
@@ -78,6 +94,7 @@ export const IntroDescription = styled.p`
 export const IntroButtons = styled.div`
   display: flex;
   margin: 2rem 0;
+
   @media screen and (max-width: 400px) {
     flex-direction: column;
   }
@@ -85,4 +102,7 @@ export const IntroButtons = styled.div`
 
 export const DemoButton = styled(Button)``;
 
-export const PreviewButton = styled(Button)``;
+export const PreviewButton = styled(Button)`
+  position: relative;
+  left: 2rem;
+`;

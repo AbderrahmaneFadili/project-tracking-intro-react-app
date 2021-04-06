@@ -29,26 +29,26 @@ const Home = () => {
             alt="illustration devices"
             src={require("../../images/illustration-devices.svg").default}
           />
-        </HomeIntro>
 
-        <HomeIntroContent>
-          <IntroSubHeading>
-            <SubHeading>
-              <SubHeadingLabel>new</SubHeadingLabel>
-              Monograph Dashboard
-            </SubHeading>
-          </IntroSubHeading>
-          <IntroHeading>Powerful insights into your team</IntroHeading>
-          <IntroDescription>
-            Project planning and time tracking for agile teams
-          </IntroDescription>
-          <IntroButtons>
-            <DemoButton primary to="/demo">
-              Schedule a demo
-            </DemoButton>
-            <PreviewButton to="/preview">to see a live preview</PreviewButton>
-          </IntroButtons>
-        </HomeIntroContent>
+          <HomeIntroContent>
+            <IntroSubHeading>
+              <SubHeading>
+                <SubHeadingLabel>new</SubHeadingLabel>
+                Monograph Dashboard
+              </SubHeading>
+            </IntroSubHeading>
+            <IntroHeading>Powerful insights into your team</IntroHeading>
+            <IntroDescription>
+              Project planning and time tracking for agile teams
+            </IntroDescription>
+            <IntroButtons>
+              <DemoButton primary to="/demo">
+                Schedule a demo
+              </DemoButton>
+              <PreviewButton to="/preview">to see a live preview</PreviewButton>
+            </IntroButtons>
+          </HomeIntroContent>
+        </HomeIntro>
       </Container>
     </HomeWrapper>
   );
