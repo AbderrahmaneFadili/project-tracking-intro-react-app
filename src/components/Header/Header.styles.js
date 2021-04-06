@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Container } from "../../styles/GlobalStyle";
 import { motion } from "framer-motion";
 
@@ -41,7 +41,13 @@ export const Nav = styled(motion.nav)`
   box-shadow: -4px 11px 15px 0px rgba(0, 0, 0, 0.2);
   background: white;
   z-index: 9999;
-  display: ${({ showMenu }) => (showMenu ? "block" : "none")};
+  //for show menu animation
+  opacity: ${({ show }) => (show ? 1 : 0)};
+  //for show menu animation
+  height: ${({ show }) => (show ? "auto" : 0)};
+  //for show menu animation
+  overflow: hidden;
+  transition: all 0.4s ease;
 
   @media screen and (min-width: 992px) {
     position: initial;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   Logo,
   MainHeader,
@@ -12,6 +12,7 @@ import {
   NavLoginLink,
 } from "./Header.styles";
 import { Link } from "react-router-dom";
+import "animate.css/animate.css";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -38,7 +39,8 @@ const Header = () => {
           )}
         </MenuToggle>
         {/* Nav */}
-        <Nav showMenu={showMenu}>
+
+        <Nav show={showMenu}>
           <NavMenu>
             <NavMenuItem>
               <NavMenuLink to="/product">product</NavMenuLink>
