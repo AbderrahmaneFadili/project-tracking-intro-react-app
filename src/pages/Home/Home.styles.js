@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Button from "../../components/Button/Button";
-import { motion } from "framer-motion";
 
 export const HomeWrapper = styled.main`
   width: 100%;
@@ -9,7 +8,7 @@ export const HomeWrapper = styled.main`
   overflow-x: hidden;
 `;
 
-export const HomePattern = styled(motion.div)`
+export const HomePattern = styled.div`
   position: absolute;
   width: 50%;
   height: 75vh;

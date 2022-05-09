@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { Container } from "../../styles/GlobalStyle";
-import { motion } from "framer-motion";
 
 export const MainHeader = styled.header`
   position: absolute;
@@ -33,7 +32,7 @@ export const MenuIcon = styled.img`
   width: 100%;
 `;
 
-export const Nav = styled(motion.nav)`
+export const Nav = styled.nav`
   width: 90%;
   position: fixed;
   top: 120px;
@@ -57,6 +56,10 @@ export const Nav = styled(motion.nav)`
     top: initial;
     z-index: 0;
     width: initial;
+    //for show menu animation
+    opacity: 1;
+    //for show menu animation
+    height: auto;
   }
 `;
 
